@@ -1,0 +1,13 @@
+Bates price by Euler or Milstein Simulation simulation
+
+-------------------------------------
+
+Method         Price     DollarError
+
+-------------------------------------
+
+Closed Form   4.7049      n/a
+
+Simulation    4.6957   0.0091
+
+-------------------------------------
