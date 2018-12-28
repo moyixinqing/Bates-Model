@@ -10,6 +10,8 @@
 
 ## Topics ##
 ### Bates_1996_Table_1_reproduction ###
+Souece Code: [Bates_1996_Table_1_reproduction](https://github.com/moyixinqing/Jump-Process/tree/master/Bates_1996_Table_1_reproduction)
+
 Table 1 of Bates (1996), first entries in each row only <br/>
 European prices <br/>
 
@@ -22,6 +24,7 @@ European prices <br/>
 | 4   | 0.3565 | 0.6194 | 1.0181 | 1.5665 | 2.2518 |
 
 ### Bates_Call_Price_Using_FFT ###
+Souece Code: [Bates_Call_Price_Using_FFT](https://github.com/moyixinqing/Jump-Process/tree/master/Bates_Call_Price_Using_FFT)
 
 |   | Strike  | Exact  | FFT Trapz | FFT Simp | #Error Tr | #Error Sim |
 |---|---------|--------|-----------|----------|-----------|------------|
@@ -41,14 +44,20 @@ European prices <br/>
 | Simpsons FFT mean absolute error    | 0.00519165829025704 |
 
 ### Bates_model_DJIA_parameter_estimation ###
+Souece Code: [Bates_model_DJIA_parameter_estimation](https://github.com/moyixinqing/Jump-Process/tree/master/Bates_model_DJIA_parameter_estimation)
+
 ![alt text](https://github.com/moyixinqing/Jump-Process/blob/master/Bates_model_DJIA_parameter_estimation/Market%20and%20Bates%20Implied%20Volatilities%20from%20Puts%20on%20DIA.jpg)
 
 ### Bates_Effect_of_jump_parameters_on_RND ###
+Souece Code: [Bates_Effect_of_jump_parameters_on_RND](https://github.com/moyixinqing/Jump-Process/tree/master/Bates_Effect_of_jump_parameters_on_RND)
+
 ![alt text](https://github.com/moyixinqing/Jump-Process/blob/master/Bates_Effect_of_jump_parameters_on_RND/Implied%20and%20Local%20Volatility.jpg)
 
 ![alt text](https://github.com/moyixinqing/Jump-Process/blob/master/Bates_Effect_of_jump_parameters_on_RND/Effect%20of%20Jump%20Parameters%20on%20Risk%20Netural%20Densities.jpg)
 
 ### Bates_Call_Price_Using_Simulation ###
+Souece Code: [Bates_Call_Price_Using_Simulation](https://github.com/moyixinqing/Jump-Process/tree/master/Bates_Call_Price_Using_Simulation)
+
 [Euler and Milstein Discretization](https://github.com/moyixinqing/Jump-Process/blob/master/Bates_Call_Price_Using_Simulation/Euler%20and%20Milstein%20Discretization.pdf)
 
 Bates price by Euler or Milstein Simulation simulation <br/>
