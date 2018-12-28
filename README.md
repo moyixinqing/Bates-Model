@@ -5,7 +5,8 @@
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://github.com/moyixinqing/Greeks)
 
 ## Features ##
-Leveradged - [Numpy](http://www.numpy.org) and - [SciPy](https://www.scipy.org) in Python
+- [Numpy](http://www.numpy.org) 
+- [SciPy](https://www.scipy.org) in Python
 
 ## Topics ##
 ### Bates_1996_Table_1_reproduction ###
@@ -32,10 +33,12 @@ European prices <br/>
 | 5 | 56.6950 | 1.0236 | 1.0237    | 1.0237   | 0.0099    | 0.0099     |
 | 6 | 60.3716 | 0.4539 | 0.4538    | 0.4538   | -0.0183   | -0.0183    |
 
-['Integration increment 0.024414'] <br/>
-['Log strike increment  0.062832'] <br/>
-['Trapezoidal FFT mean absolute error 0.005191658695471002'] <br/>
-['Simpsons FFT mean absolute error    0.005191658290257042'] <br/>
+| Item                                | Value               |
+|-------------------------------------|---------------------|
+| Integration increment               | 0.02441400000000000 |
+| Log strike increment                | 0.06283200000000000 |
+| Trapezoidal FFT mean absolute error | 0.00519165869547100 |
+| Simpsons FFT mean absolute error    | 0.00519165829025704 |
 
 ### Bates_model_DJIA_parameter_estimation ###
 ![alt text](https://github.com/moyixinqing/Jump-Process/blob/master/Bates_model_DJIA_parameter_estimation/Market%20and%20Bates%20Implied%20Volatilities%20from%20Puts%20on%20DIA.jpg)
