@@ -1,0 +1,30 @@
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: 0.00020065604912753663
+            Iterations: 11
+            Function evaluations: 115
+            Gradient evaluations: 11
+Bates parameter estimates for the DJIA
+
+Parameter   Estimate
+
+--------------------
+
+kappa      2.9877
+
+theta      0.2118
+
+sigma      4.0157
+
+v0         0.0571
+
+rho        0.0420
+
+lambdaJ    -0.0194
+
+numJ       3.0028
+
+sigmaJ     2.9900
+
+--------------------
+
+Estimation time 4.776 seconds
