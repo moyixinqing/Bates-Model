@@ -78,27 +78,30 @@ K     = K[ATM];
 # =============================================================================
 
 [x,w] = GenerateGaussLaguerre(32);
-CallE =np.zeros(len(K))
+CallE =np.zeros((len(K),1))
 for k in range(len(K)):
     CallE[k] = SVprice('Bates','C',param,tau,K[k],S0,r,q,x,w);
 
 ErrorT = (CallT-CallE)/CallE*100;
 ErrorS = (CallS-CallE)/CallE*100;
 
-MSET = np.mean(abs(ErrorT));
-MSES = np.mean(abs(ErrorS));
+
+
+
+MSET = abs(ErrorT).mean();
+MSES = abs(ErrorS).mean();
 
 ## Print the results
 print('Strike       Exact       FFT Trapz   FFT Simp   #Error Tr   #Error Sim')
 print('----------------------------------------------------------------------')
 import pandas as pd
 result = pd.DataFrame()
-result['Strike'] = K
+result['Strike'] = K[:,0]
 result['Exact']  = CallE     
-result['FFT Trapz'] = CallT
-result['FFT Simp'] = CallS  
-result['%Error Tr'] = ErrorT
-result['%Error Sim'] = ErrorS
+result['FFT Trapz'] = CallT[:,0]
+result['FFT Simp'] = CallS[:,0]  
+result['%Error Tr'] = ErrorT[:,0]
+result['%Error Sim'] = ErrorS[:,0]
 print (result.round(4))
 #print(num2str([K CallE CallT CallS ErrorT ErrorS],'#12.4f'))
 print('----------------------------------------------------------------------')

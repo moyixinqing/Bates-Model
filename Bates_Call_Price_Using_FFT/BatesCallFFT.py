@@ -58,23 +58,28 @@ def BatesCallFFT(N,uplimit,S0,r,q,tau,param,alpha,fast,rule):
     # Create the grid for the log-strikes
     
     k = -b + lambdainc*np.arange(N) + s0;
-    
+    k = k.reshape((N,1))
     # Create the strikes and identify ATM 
     K = np.exp(k);
     
     # Initialize the price vector;
-    CallFFT = np.zeros(N);
+    CallFFT = np.zeros((N,1));
     
     if fast==1:
         # Implement the FFT - fast algorithm
-        U = np.arange(N);
-        J = np.arange(N);
+        U = np.arange(N).reshape((N, 1));
+        J = np.arange(N).reshape((N, 1));
+        #U = np.matrix(U)
+        #J = np.matrix(J)
+        
         psi = BatesCF(v-(alpha+1)*i,param,S0,r,q,tau);
         #psi = np.conj(psi);
         phi = exp(-r*tau)*psi / (alpha**2 + alpha - v**2 + i*v*(2*alpha+1));
         x = np.exp(i*(b-s0)*v)*phi*w;
-        e = np.exp(-i*2*pi/N*(U*J))*x;
-        CallFFT = eta*np.exp(-alpha*k)/pi * e.real;
+        #e = np.exp(-i*2*pi/N*(U.T*J))*np.matrix(x).T;
+        x = x.reshape((N, 1))
+        e = np.exp(-i*2*pi/N*(U.T*J))@x;
+        CallFFT = eta*np.exp(-alpha*k)/pi *np.array(e.real);
     
     elif fast==0:
         # Implement the FFT - slow algorithm
