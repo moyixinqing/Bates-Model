@@ -1,5 +1,5 @@
 # Fast Fourier Transform for the Bates Model
-
+import numpy as np
 # Required inputs
 N = 2**12;          # Number points for the FFT
 S0 = 50;           # Spot price.
