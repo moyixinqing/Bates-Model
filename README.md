@@ -1,4 +1,4 @@
-# Jump-Process #
+# Bates Model #
 
 ## Build status ##
 
