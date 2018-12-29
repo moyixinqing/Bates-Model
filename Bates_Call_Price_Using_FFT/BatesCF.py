@@ -77,7 +77,6 @@ def SVintegrand(phi,Model,param,S,K,r,q,T,Pnum):
   
     return svi
 
-
 # Bates characteristic function
 def BatesCF(phi,param,S,r,q,T):
     bcf = HestonCF(phi,param,T,S,r,q) * JumpCF(phi,param,T);
