@@ -68,5 +68,5 @@ Bates price by Euler or Milstein Simulation simulation <br/>
 | Simulation   | 4.6957 | 0.0091      |
 
 ## How to use? ##
-1. from module import BatesModelFunction as bmf
+1. from [module](https://github.com/moyixinqing/Bates-Model/tree/master/package/module) import BatesModelFunction as bmf
 2. call function, for example: dmf.BatesCF
