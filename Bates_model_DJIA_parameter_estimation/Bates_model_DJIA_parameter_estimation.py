@@ -114,7 +114,7 @@ for k in range(NK):
 import matplotlib.pyplot as plt
 png_loc=[]
 name='Market and Bates Implied Volatilities from Puts on DIA'
-path= 'C:/temp/Jump-Process-master/Bates_model_DJIA_parameter_estimation/'
+path= ''
 fig = plt.figure(figsize = (10,8))
 plt.text(0.5, 1.08, name,
          horizontalalignment='center',
